@@ -123,6 +123,20 @@ Then set up server pool for both the networks in DHCP Server.
 - Then add `A Records` in DNS Server with target ip address being the address of DNS server and DHCP server. 1 `A record` for each.
 - For both DNS and DHCP Servers go to `Services > HTTP` then edit `index.html` add in simple html and click save.
 
+Example,
+
+Commands for router (R1)
+```md
+router> en
+router# conf t
+Router(config)#  int fa0/0
+Router(config-if)#  ip helper-address 192.168.2.2
+Router(config-if)#  ip address 192.168.1.4
+Router(config-if)#  exit
+Router(config)#  int fa0/1
+Router(config-if)#  ip address 192.168.1.2
+Router(config-if)#  exit
+```
 <img src="./Assets/DNS.png" width="600px"></img>
 
 
