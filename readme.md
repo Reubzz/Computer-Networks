@@ -98,7 +98,7 @@ Router(config-router)# exit
 
 ## DHCP Routing
 
-### Base Command - `ip helper-address <DHCP_server_ip_address>`
+#### Base Command - `ip helper-address <DHCP_server_ip_address>`
 where:
 - `<DHCP_server_ip_address>`=> The Static IP Address of the DCHP Server.
 
