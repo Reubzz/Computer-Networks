@@ -118,3 +118,11 @@ Then set up server pool for both the networks in DHCP Server.
 <img src="./Assets/DHCP.png" width="600px"></img>
 
 ## DNS Routing
+
+- Setup Normal [DHCP Server](#dhcp-routing), then add a DNS Server. Update DHCP Server pool and add DNS Server - with IP Add of DNS server.
+- Then add `A Records` in DNS Server with target ip address being the address of DNS server and DHCP server. 1 `A record` for each.
+- For both DNS and DHCP Servers go to `Services > HTTP` then edit `index.html` add in simple html and click save.
+
+<img src="./Assets/DNS.png" width="600px"></img>
+
+
