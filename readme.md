@@ -12,9 +12,7 @@
 ### Static Routing
 
 Base Command - 
-- ```
-ip route <destination_network> <subnet_mask> <next_hop_Address>
-```
+- `ip route <destination_network> <subnet_mask> <next_hop_Address>`
     where: 
     - `<destination_network>` => The network Address of the link connected recieving PC. It must end in a `0`. eg: (192.168.0.0)
     - `subnet_mask` => The Subnet mask of the `<destination_network>`
