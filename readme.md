@@ -2,12 +2,23 @@
 
 | Table of Contents |
 | :--: |
+| [IP Classes](#ip-classes) |
 | [Static Routing](#static-routing) |
 | [RIP Routing](#rip-routing) |
 | [OSPF Routing (Single Area)](#ospf-routing-single-area) |
 | [OSPF Routing (Multi Area)](#ospf-routing-multi-area) |
 | [DHCP Server](#dhcp-routing) |
 | [DNS Server](#dns-routing) |
+
+## IP Classes
+
+| Classes | Range |
+| :--: | :--: |
+| A | 1 - 127 |
+| B | 128 - 191 |
+| C | 192 - 223 |
+| D | 224 - 239 |
+| E | 240 - 254 |
 
 ## Static Routing
 
