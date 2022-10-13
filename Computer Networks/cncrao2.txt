@@ -1,0 +1,90 @@
+Explain the types of transmission modes for data flow. 
+Simplex is a one way unidirectional flow of transmission. (one way) 
+Bidirectional is a half-duplex with comms happening one at a time. It goes both ways but operations in one direction at a time. 
+Multidirectional is a full duplex communication flow, for example, smartphones. 
+
+What is the importance of Networking? 
+File sharing, hardware sharing and user communication, high reliability and communication medium. 
+
+Define Data Communication. 
+ Data communication is the exchange of data between two devices via some form of transmission medium such as a wire cable. The communicating devices must be part of a comm system made up of a combination of hardware and software. The effectiveness depends on four characteristics. Delivery , accuracy, timeliness, and jitter. 
+1. Delivery. The system must deliver data to the correct destination. Data must be received by the intended device or user and only by that device or user.
+2. Accuracy. The system must deliver the data accurately. Data that have been altered in transmission and left uncorrected are unusable.
+3. Timeliness. The system must deliver data in a timely manner. Data delivered late are useless. In the case of video and audio, timely delivery means delivering data as
+they are produced, in the same order that they are produced, and without significant delay. This kind of delivery is called real-time transmission.
+4. Jitter. Jitter refers to the variation in the packet arrival time. It is the uneven delay in the delivery of audio or video packets. For example, let us assume that video packets
+are sent every 30 ms. If some of the packets arrive with 30-ms delay and others with 40-ms delay, an uneven quality in the video is the result.
+ 
+What are the components of a data com system? 
+1.Message. The message is the information (data) to be communicated. Popular forms of information include text, numbers, pictures, audio, and video.
+2. Sender. The sender is the device that sends the data message. It can be a computer, workstation, telephone handset, video camera, and so on.
+3. Receiver. The receiver is the device that receives the message. It can be a computer, workstation, telephone handset, television, and so on.
+4. Transmission medium. The transmission medium is the physical path by which a message travels from sender to receiver. Some examples of transmission media
+include twisted-pair wire, coaxial cable, fiber-optic cable, and radio waves.
+5. Protocol. A protocol is a set of rules that govern data communications. It represents an agreement between the communicating devices. Without a protocol, two devices may be connected but not communicating, just as a person speaking French cannot be understood by a person who speaks only Japanese.
+
+Define different ways data can be represented. 
+The ASCII is used to represent unicode language. 
+Numbers are also represented by bit patterns. However, a code such as ASCII is not used
+to represent numbers.
+Images are also represented by bit patterns. In its simplest form, an image is composed
+of a matrix of pixels (picture elements), where each pixel is a small dot. (RGB AND YCM) 
+Audio refers to the recording or broadcasting of sound or music. Audio is by nature
+different from text, numbers, or images. It is continuous, not discrete.
+Video refers to the recording or broadcasting of a picture or movie. Video can either be
+produced as a continuous entity.
+
+Define Parallel Transmission and Serial Transmission 
+A serial transmission transfers data one bit at a time, consecutively, via a communication channel or computer bus in telecommunication and data transmission. On the other hand, parallel communication delivers multiple bits as a single unit through a network with many similar channels. 
+Parallel communication is a means of transmitting multiple binary digits (bits) simultaneously in data transmission. It differs from serial communication, which sends only one bit at a time; this distinction is one method to classify a communication channel.
+
+Describe the requirements for a network criteria. 
+Net criteria is composed of performance(measured in transit and response time, capability and effieicency, evaluated by throughput and delay), reliability(frequence of failure, recovery from failure, robustness from a catastrophe) and Security(protection from unauthorized access, damage and development, policies and procedures). 
+
+What is a network and what are the types of connections we can have? 
+A network is two or more devices connected through links. A link is a communication pathway that transfers data from one device to another. Two types of connections consist of single point and multipoint. A P2P connection provides a dedicated link between two devices. A multipoint connection is one in which more than two specific devices share a single link. 
+Discuss the advantages and disadvantages of different network topologies. 
+There are four basic topologies possible: mesh, star, bus, and ring.
+In a mesh topology, every device has a dedicated point-to-point link to every other device. A mesh offers the garuntee that each connection carries its own data load, eliminating traffic problems. A mesh topology is robust, if one link dies, it does not affect the entire system. Lastly, there is the advantage of privacy and security. Disadvantages include amount of cabling and IO required, and can be expensive. Hardware required can be expensive. 
+Star Top - Each device has a dedicated p2p link only to a central controller, usually a hub. Less expensive than a mesh. Each device needs only one link and one i/o port to connect it to any number of other. Adv is robustness, one big disadv is the dependency of the whole topology on one single point. 
+Bus top - A bus topology is multipoint. One long cable acts as a backbone to link all the devices in a network. Nodes are connected to the bus cable by drop lines and taps. A drop line is a connection running between the device and the main cable. Ease of installation. Less cabling, redundancy is eliminated. Disadv, difficult reconnection and fault isolation. Usually designed to be optimally efficient at installation. Degradation in quality. 
+Ring top  - Each device has a dedicated p2p connection with only two devices on either side. A signal is passed along the ring, each device incorporates a repeater. Easy to install and reconfigure. Each device is linked to only its immediate neighbors. To add or delete a device requires changing only two connections. Media and traffic considerations (disadv) 
+
+Network types - LAN's - In the past, all hosts in a network were connected through a common cable, which meant that a packet sent from one host to another was received by all hosts. WANS -  A wide area network (WAN) is also an interconnection of devices capable of communication. However, there are some differences between a LAN and a WAN.
+
+Circuit Switched Network - In a circuit-switched network, a dedicated connection, called a circuit, is always available between the two end systems; the switch can only make it active or inactive.
+
+Packet-Switched Network - In a computer network, the communication between the two ends is done in blocks of data called packets. This allows us to make the switches function for both storing and forwarding because a packet is an independent entity that can be stored and sent later. A router in a packet-switched network has a queue that can store and forward the packet.
+
+World Wide Web- The 1990s saw the explosion of Internet applications due to the emergence of the World Wide Web (WWW). The Web was invented at CERN by Tim Berners-Lee. This invention has added the commercial applications to the Internet.
+
+What is an internet standard? Explain the maturity levels of RFC. 
+An Internet standard is a thoroughly tested specification that is useful to and adhered to by those who work with the Internet. It is a formalized regulation that must be followed.
+There is a strict procedure by which a specification attains Internet standard status. A specification begins as an Internet draft. An Internet draft is a working document (a work in progress) with no official status and a six-month lifetime. Upon recommendation from the Internet authorities, a draft may be published as a Request for Comment (RFC). Each
+RFC is edited, assigned a number, and made available to all interested parties.
+Proposed Standard - . A proposed standard is a specification that is stable, well understood, and of sufficient interest to the Internet community.
+Draft Standard. A proposed standard is elevated to draft standard status after at least two successful independent and interoperable implementations.
+Internet Standard. A draft standard reaches Internet standard status after demonstrations of successful implementation.
+Historic. The historic RFCs are significant from a historical perspective. They either have been superseded by later specifications or have never passed the necessary maturity levels to become an Internet standard.
+Experimental -  An RFC classified as experimental describes work related to an experimental situation that does not affect the operation of the Internet. Such an
+RFC should not be implemented in any functional Internet service. 
+ Informational. An RFC classified as informational contains general, historical, or tutorial information related to the Internet. It is usually written by someone in a
+non-Internet organization, such as a vendor.
+
+Administrations 
+
+
+ISOC
+The Internet Society (ISOC) is an international, nonprofit organization formed in 1992 to provide support for the Internet standards process.
+IAB
+The Internet Architecture Board (IAB) is the technical advisor to the ISOC. The main purposes of the IAB are to oversee the continuing development of the TCP/IP
+Protocol Suite and to serve in a technical advisory capacity to research members of the Internet community. IAB accomplishes this through its two primary components, the
+Internet Engineering Task Force (IETF) and the Internet Research Task Force (IRTF).
+IETF
+The Internet Engineering Task Force (IETF) is a forum of working groups managed by the Internet Engineering Steering Group (IESG). IETF is responsible for identifying
+operational problems and proposing solutions to these problems. IETF also develops and reviews specifications intended as Internet standards.
+Currently nine areas have been defined. The areas include applications, protocols, routing, network management next generation (IPng), and security.
+IRTF
+The Internet Research Task Force (IRTF) is a forum of working groups managed by the Internet Research Steering Group (IRSG). IRTF focuses on long-term research top-
+ics related to Internet protocols, applications, architecture, and technology.
+
